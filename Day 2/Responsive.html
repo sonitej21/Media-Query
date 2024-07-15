@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: black;
+        }
+
+        header {
+            /* border: 1px solid white; */
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        header .logo {
+            /* border: 1px solid white; */
+            width: 20%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header .logo a {
+
+            font-weight: bold;
+            font-size: 30px;
+            color: #FBCED7;
+            text-decoration: none;
+        }
+
+        header nav {
+            /* border: 1px solid white; */
+            width: 50%;
+            height: 100%;
+        }
+
+        header nav ul {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        header nav ul li {
+            color: #FBCED7;
+            list-style-type:  none;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .about {
+            /* border: 1px solid white; */
+            width: 100%;
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .about .abt {
+            /* border: 1px solid white; */
+            width: 90%;
+            height: 90%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .about .abt .image {
+            /* border: 1px solid white; */
+            width: 45%;
+            height: 100%;
+        }
+
+        .about .abt .image img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .about .abt .text {
+            /* border: 1px solid white; */
+            width: 45%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .about .abt .text .head {
+            color: #FBCED7;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .about .abt .text .content {
+            font-size: 16px;
+            color: #FBCED7;
+        }
+
+        .about .abt .text button {
+            border: 1px solid white;
+            width: 30%;
+            height: 40px;
+            color: white;
+        }
+
+        @media (max-width:1200px) {
+            header nav {
+                width: 70%;
+            }
+
+            .about {
+                height: 500px;
+            }
+
+            .about .abt {
+                height: 90%;
+            }
+
+            .about .abt .text .head {
+                font-size: 30px;
+            }
+
+            .about .abt .text .content {
+                font-size: 15px;
+            }
+
+            .about .abt .text button {
+                width: 30%;
+            }
+        }
+
+        @media (max-width:980px) {
+            header nav {
+                width: 70%;
+            }
+
+            .about {
+                height: 450px;
+            }
+
+            .about .abt {
+                width: 90%;
+                height: 90%;
+            }
+
+            .about .abt .image {
+                width: 45%;
+            }
+
+            .about .abt .text {
+                width: 45%;
+            }
+
+            .about .abt .text .head {
+                font-size: 30px;
+            }
+
+            .about .abt .text .content {
+                font-size: 14px;
+            }
+
+            .about .abt .text button {
+                width: 30%;
+            }
+        }
+
+        @media (max-width:720px) {
+            header nav {
+                width: 70%;
+            }
+
+            .about {
+                height: 1000px;
+            }
+
+            .about .abt {
+                height: 90%;
+                flex-direction: column;
+            }
+
+            .about .abt .image {
+                width: 100%;
+                height: 45%;
+            }
+
+            .about .abt .text {
+                width: 100%;
+                height: 45%;
+            }
+
+            .about .abt .text .content {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width:480px)
+        {
+            header .logo {
+                width: 20%;
+            }
+
+            header .logo a {
+                font-size: 20px;
+            }
+
+            header nav {
+                width: 70%;
+            }
+
+            header nav ul li {
+                font-size: 16px;
+            }
+
+            .about {
+                height: 1000px;
+            }
+
+            .about .abt {
+                width: 90%;
+                height: 90%;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+
+            .about .abt .image {
+                width: 100%;
+                height: 45%;
+            }
+
+            .about .abt .text {
+                width: 100%;
+                height: 45%;
+            }
+
+            .about .abt .text .head {
+                font-size: 30px;
+            }
+
+            .about .abt .text .content {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="">R&W</a>
+        </div>
+
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Product</li>
+                <li>Services</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="about">
+        <div class="abt">
+            <div class="image">
+                <img src="Image/spring-7901015_1920.jpg" alt="">
+            </div>
+
+            <div class="text">
+                <p class="head">About</p>
+                <p class="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis eveniet ut pariatur. Aliquam, perferendis minus corrupti optio temporibus tenetur laudantium! Deserunt voluptates vitae eum reiciendis laudantium numquam, tempora in incidunt. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, accusamus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum eius omnis atque possimus nesciunt minus corporis inventore, cupiditate debitis eveniet, eligendi tempore rem ut, laborum consectetur commodi deserunt quam? Odio delectus vero consequuntur placeat ab, reiciendis veritatis at voluptates facere iure libero quibusdam itaque sint officiis quis architecto ex ut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, iure quae. Expedita culpa facere earum impedit commodi tempore, reprehenderit omnis quos dolores suscipit. Voluptate doloribus quis error neque vel voluptatem, animi beatae, placeat quos, culpa ipsa aut perferendis nobis. Voluptatum tempore, praesentium facilis rerum et quasi dolores corrupti reprehenderit tempora!</p>
+                <button>Click Here</button>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

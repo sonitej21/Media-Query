@@ -1,0 +1,25 @@
+							MediaQuery Theory
+
+1) What Is  Mediaquery??
+
+	it is css, But altered css, which id only work in different layout
+
+2) what are the types of devices??
+
+	mobile			    	(0px to 360px)
+	smart phone			(360px to 480px)
+	tablet-verticle			(576px to 720px)
+	tablet-horizantal		(720px to 980px)
+	laptop/computer			(980px to 1200px)/1400px
+	smart tv			(1400px to up)
+	latest smart phone		(360px to 576px)
+
+3) starting point - min width
+   ending point   - max width
+
+4) how to assign mediaquery??
+
+	@media(max-width:)
+	{
+						
+	}         tejas soni vagadiya
